@@ -1,14 +1,42 @@
-const gameSketchInstruction = gameSketch => {
+// kryds : 1
+// bolle : 2
+var board = [[1, 0, 0],
+             [2, 1, 1],
+             [0, 2, 2]];
+var tur = 1;
 
-    gameSketch.setup = () => {
-      var canvas = gameSketch.createCanvas(450, 450);
-      canvas.parent("game");
-      gameSketch.background(100);
+setup = function(){
+  var canvas = createCanvas(500, 500);
+  canvas.parent("game");
+  background(100, 50, 255);
+}
 
-    };
+draw = function(){
+  drawBoard();
+  drawBrikker();
+}
+/**
+ * Tegne boardet. Bliver kaldt af draw.
+ */
+var drawBoard = function(){
 
-    gameSketch.draw = () => {
+}
+/**
+ * Tegner brikker på boarded afhængig af var
+ */
+var tegnBrikker = function(){
 
-    };
-  };
-let myp5 = new p5(gameSketchInstruction);
+}
+/**
+ * tegner bolle med centrum i c,r
+ */
+var tegnBolle = function(c,r){
+
+}
+/**
+ * tegner kryds med centrum i c(søjle),r(række)
+ */
+ var tegnKryds = function(c,r){
+
+}
+
