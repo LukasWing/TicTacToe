@@ -51,12 +51,12 @@ var findVinder = function(board) {
   return -1;
 }
 /**
- * @return {JSON}
+ * @return {JSON} hvor c er kolonnenumer og r indikerer række nummer.
  * @param {int} tur tal, som indikerer, hvem der skal spille næste gang. 
  */
-var input = function(tur){
+var readInput = function(tur){
 
-  return {r: -1, c: -1}
+  return {c: -1, r: -1}
 }
 
 
