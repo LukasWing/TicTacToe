@@ -12,17 +12,20 @@ setup = function(){
 }
 
 draw = function(){
+  var input = readInput(tur);
+  var r = input[0];
+  var c = input[1]
   drawBoard();
   drawBrikker();
+  var vinder = findVinder(board);
 }
 /**
- * Tegne boardet. Bliver kaldt af draw.
+ * Tegn boardet uden brikker. Bliver kaldt af draw.
  */
 var drawBoard = function(){
-
 }
 /**
- * Tegner brikker på boarded afhængig af var
+ * Tegner alle brikker på boarded skal kalde tegnBolle() og/eller tegnKryds()
  */
 var tegnBrikker = function(){
 
@@ -36,7 +39,25 @@ var tegnBolle = function(c,r){
 /**
  * tegner kryds med centrum i c(søjle),r(række)
  */
- var tegnKryds = function(c,r){
+var tegnKryds = function(c,r){
 
 }
+/**
+ * @param {int[][]} board brættet, som skal tjekkes.
+ * @returns {int} tal som indikerer resultat af brættet. Kryds vinder: 1. Bolle vinder: 2. Uafgjort: 3. Ikke færdigt: 4.
+ */
+var findVinder = function(board) {
+
+  return -1;
+}
+/**
+ * @return {JSON}
+ * @param {int} tur tal, som indikerer, hvem der skal spille næste gang. 
+ */
+var input = function(tur){
+
+  return {r: -1, c: -1}
+}
+
+
 
