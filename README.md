@@ -1,2 +1,2 @@
 # TicTacToe
-Dette repository indeholder koden til  ufærdig en kryds og bolle opgave.
+Dette repository indeholder koden til en ufærdig kryds og bolle opgave.
